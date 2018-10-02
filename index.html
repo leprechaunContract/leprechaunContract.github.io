@@ -1460,7 +1460,7 @@
         });
 
 
-        let balance = function (address) {
+        var balance = function (address) {
             return Math.round(
                 balance.client.eth.getBalance(address).toNumber() / 10000000000000000
             ) / 100;
