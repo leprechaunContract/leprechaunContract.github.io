@@ -41,9 +41,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="css/creative.min.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -112,7 +111,7 @@
 
 
     <div data-aos-delay="1000" data-aos="fade" >
-        <div style="z-index: 100; width: 60px; height: 60px" id="telegram_channel">
+        <div style="z-index: 100; width: 60px; height: 60px" id="icon">
             <a href="https://teleg.run/LeprechaunContractBot" target="_blank"><img src="img/telegram.png" alt="" title=""/></a>
         </div>
     </div>
@@ -617,7 +616,7 @@
                      data-field-top-res-320-value="673" data-field-left-value="399" data-field-left-res-960-value="283" data-field-left-res-640-value="314" data-field-left-res-480-value="256" data-field-left-res-320-value="59" data-field-height-value="55"
                      data-field-height-res-640-value="55" data-field-height-res-480-value="52" data-field-height-res-320-value="52" data-field-width-value="200" data-field-width-res-960-value="200" data-field-width-res-640-value="200" data-field-width-res-480-value="200"
                      data-field-width-res-320-value="222" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="">
-                    <a class='tn-atom' href="https://etherscan.io/address/0xfCD70fCC82e94DAc57b75d5099F8b2f07fc5786C#code">Посмотреть код</a> </div>
+                    <a target="_blank" class='tn-atom' href="https://etherscan.io/address/0xfCD70fCC82e94DAc57b75d5099F8b2f07fc5786C#code">Посмотреть код</a> </div>
             </div>
         </div>
         <script>
@@ -663,12 +662,11 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <hr>
-                    Резерв контракта на данный момент: <b id="reserve">...</b>
                     <div class="col-12 col-md-10 container">
                         <div id="highcharts"></div>
                     </div>
+                    <hr>
+                    Резерв контракта на данный момент: <b id="reserve">...</b>
                 </div>
             </div>
         </div>
@@ -680,28 +678,23 @@
         <div data-aos="fade" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="200" class="container">
             <div class="row">
                 <div  class="col-12 text-center invest-info">
-                    <h5 class="arial">Как сделать вклад в проект</h5>
-
+                    <h5 class="arial">Как инвестировать в контракт</h5>
+                    <br>
                     <div class="text">
                         <div>
-                            <div>Отправьте ETH со своего кошелька на адрес смарт контракта:</div>
+                            <div>Просто отправьте любое количество ETH на адрес контракта:</div>
                             <span style="font-size: 1.2rem" class="arial"><code>0xfCD70fCC82e94DAc57b75d5099F8b2f07fc5786C</code></span>
                         </div>
                         <br/>
 
-                        <div>Минимальная сумма вложения: <b class="arial">Отсутствует</b></div>
                         <div>
                             Рекомендуемый gas limit: <b class="arial">300000</b>
                         </div>
                         <div>
-                            Цену газа можно смотреть на <a class="a-wh" target="_blank" href="https://ethgasstation.info/">https://ethgasstation.info/</a>
+                            Рекомендуемая цена газа: <a class="a-wh" target="_blank" href="https://ethgasstation.info/">https://ethgasstation.info/</a>
                         </div>
-                        <div>Не допускаются перечисления с бирж и других смарт контрактов, только с вашего личного кошелька</div>
-
-                        <div class="pt-md-4">
-                            <div>
-                                Мы рекомендуем использовать следующие кошельки: <a class="a-wh" href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet</a>, <a class="a-wh" href="https://metamask.io/" target="_blank">Metamask</a>, <a class="a-wh" href="https://jaxx.io/downloads.html" target="_blank">Jaxx</a>.
-                            </div>
+                        <div>
+                            Рекомендуемые кошельки: <a class="a-wh" href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet</a>, <a class="a-wh" href="https://download.mycrypto.com/" target="_blank">MyCrypto</a>, <a class="a-wh" href="https://metamask.io/" target="_blank">Metamask</a>.
                         </div>
                     </div>
                 </div>
@@ -722,18 +715,17 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <br><br>
-                    <h5 class="arial">Получайте выплаты в любое время</h5>
+                    <h5 class="arial">Как забрать дивиденды</h5>
                     <div class="text">
-                        Контракт запоминает адрес Вашего кошелька, а также сумму и время вклада
                         Каждые 24 часа к доступной Вам выплате прибавляется <b>2%</b> от вложенной Вами суммы.
                         Вы можете получить выплату в любое время, отправив <b>0 ETH</b> на адрес контракта.
-                        Вы также можете отправлять больше ETH для реинвеста и получать выплату одновременно
+                        Вы также можете отправить транзакцию с большим ETH, чтобы добавить его к начальной сумме (реинвестирование) и одновременно забрать накопленные дивиденды
                     </div>
                     <br><br>
                     <a id="partner"></a>
                     <h5 class="arial">Приглашайте и зарабатывайте</h5>
                     <div class="text">
-                        Привлекайте рефералов и получайте <b>5%</b> от каждого их депозита. Ваши рефералы также получают бонус - кешбек <b>10%</b> от их первого вклада.
+                        Привлекайте рефералов и получайте <b>5%</b> от каждого их депозита, который более <b>0.001 ETH</b>. Ваши рефералы также получают бонус - кешбек <b>10%</b> от их первого вклада.
 
                         Для того, чтобы стать Вашим рефераллом, при оплате пользователь должен указать Ваш адрес в поле <b>DATA</b>
                         <div class="row justify-content-center">
@@ -981,7 +973,7 @@
                      data-field-top-res-320-value="-84" data-field-left-value="0" data-field-left-res-960-value="0" data-field-left-res-640-value="0" data-field-left-res-480-value="0" data-field-left-res-320-value="0" data-field-height-value="52" data-field-height-res-960-value="52"
                      data-field-height-res-640-value="52" data-field-height-res-480-value="52" data-field-height-res-320-value="52" data-field-width-value="222" data-field-width-res-960-value="222" data-field-width-res-640-value="222" data-field-width-res-480-value="222"
                      data-field-width-res-320-value="222" data-field-axisy-value="top" data-field-axisy-res-320-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value=""
-                     data-field-heightunits-value="" data-field-widthunits-value=""> <a class='tn-atom' href="https://teleg.run/LeprechaunContractBot">Перейти в кабинет</a> </div>
+                     data-field-heightunits-value="" data-field-widthunits-value=""> <a class='tn-atom' target="_blank" href="https://teleg.run/LeprechaunContractBot">Перейти в кабинет</a> </div>
                 <div class='t396__elem tn-elem tn-elem__686154291470209944682' data-elem-id='1470209944682' data-elem-type='text' data-field-top-value="75"
                      data-field-top-res-960-value="58" data-field-top-res-640-value="43" data-field-top-res-480-value="47" data-field-top-res-320-value="-299" data-field-left-value="0" data-field-left-res-960-value="5" data-field-left-res-640-value="0"
                      data-field-left-res-480-value="0" data-field-left-res-320-value="0" data-field-width-value="920" data-field-width-res-960-value="720" data-field-width-res-640-value="550" data-field-width-res-480-value="370" data-field-width-res-320-value="290"
@@ -1007,7 +999,7 @@
                     <br><br>
                     <h5 class="arial">Финансовая модель</h5>
                     <div class="text">
-                        Каждый инвестор независимо от своего вклада получают гарантированную прибыль <b>2%</b> в день, пока в фонде остаются средства. <b>85%</b> поступающих вложений уходит на выплату вкладчикам, <b>10%</b> распределяются на рекламный бюджет проекта, <b>5%</b> получают разработчики
+                        Каждый инвестор независимо от своего вклада получают гарантированную прибыль <b>2%</b> в день, пока в фонде остаются средства. <b>85%</b> поступающих вложений уходит на выплату вкладчикам, от <b>10%</b> распределяются на рекламный бюджет проекта, до <b>5%</b> получают разработчики
                     </div>
                     <br>
                     <div class="row justify-content-center">
@@ -1134,15 +1126,6 @@
                         </div>
                         <i><label for="faq-4">&#9660;</label></i>
                     </div>
-
-                    <div class="pt-md-2 pb-md-2 faq-item">
-                        <h4><label for="faq-5">Почему выплаты пожизненные?</label></h4>
-                        <input type="checkbox" id="faq-5" class="faq-checkbox" />
-                        <div>
-                            Код смарт контракта гарантирует выплаты до тех пор, пока в фонде есть средства.
-                        </div>
-                        <i><label for="faq-5">&#9660;</label></i>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1153,7 +1136,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h4 class="arial section-heading">Остались вопросы?</h4>
+                <h4 class="arial section-heading">Присоединяйтесь к нашему комьюнити</h4>
             </div>
         </div>
         <div class="row">
@@ -1161,7 +1144,8 @@
             <div class="col-lg-12 mr-auto text-center">
                 <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
                 <p class="text">
-                <div>Посетите наш чат в telegram: <a style="color: black; font-weight: bold" href="https://teleg.run/LeprechaunChat">@LeprechaunChat</a></div>
+                <div>Чат в telegram: <a target="_blank" style="color: black; font-weight: bold" href="https://teleg.run/LeprechaunChat">@LeprechaunChat</a></div>
+                <div>Новостной канал в telegram: <a target="_blank" style="color: black; font-weight: bold" href="https://teleg.run/LeprechaunChannel">@LeprechaunChannel</a></div>
                 </p>
             </div>
         </div>
